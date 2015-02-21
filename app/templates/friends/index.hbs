@@ -2,10 +2,19 @@
 {{! the context here is the controller}}
 <h2>Total friends: {{model.length}} </h2>
 
-<ul>
-  {{#each friend in model}}
-    <li>
-      {{link-to friend.fullName 'friends.show' friend}}
-    </li>
-  {{/each}}
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each friend in model}}
+      <tr>
+        <td>{{link-to friend.fullName 'friends.show' friend}}</td>
+        <td><a href='#' {{action "delete" friend}}>Delete</a></td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
