@@ -4,6 +4,8 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
+app.import('bower_components/picnic/releases/v2.4.min.css');
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
