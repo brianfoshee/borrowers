@@ -20,6 +20,8 @@ app.import('vendor/fontello/font/fontello.woff', {
 
 app.import('bower_components/picnic/releases/v2.4.min.css');
 
+app.import('bower_components/moment/moment.js');
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
